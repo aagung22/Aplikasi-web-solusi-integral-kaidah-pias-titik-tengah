@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from sympy import simbols, parse_expr, lambdify
+from sympy import symbols, parse_expr, lambdify
 
 # === fungsi inti: kaidah pias titik tengah 
 
