@@ -9,14 +9,14 @@ def midpoint_rule(f, a, b, N):
   Mengaproksimasi integral tentu f(x) dari a ke b 
   menggunakan kaidah pias titik tengah dengan N pias.
   """
-  if N <= 0:
+    if N <= 0:
     return 0.0
 
   # Hitung lebar pias (Delta X)
-  delta_x = (b - a) / N
+    delta_x = (b - a) / N
 
   # Initialisasi Total Integral
-  integral_sum = 0.0
+    integral_sum = 0.0
 
   # Iterasi melalui setiap pias
     for i in range(N):
