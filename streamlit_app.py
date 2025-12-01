@@ -5,24 +5,24 @@ from sympy import simbols, parse_expr, lambdify
 # === fungsi inti: kaidah pias titik tengah 
 
 def midpoint_rule(f, a, b, N):
-  """
-  Mengaproksimasi integral tentu f(x) dari a ke b 
-  menggunakan kaidah pias titik tengah dengan N pias.
-  """
+    """
+    Mengaproksimasi integral tentu f(x) dari a ke b 
+    menggunakan kaidah pias titik tengah dengan N pias.
+    """
+    # INDENTASI LEVEL 1: Kondisi awal
     if N <= 0:
-    return 0.0
+        # INDENTASI LEVEL 2: Di dalam blok 'if'
+        return 0.0
 
-  # Hitung lebar pias (Delta X)
+    # Hitung lebar pias (Delta X)
     delta_x = (b - a) / N
 
-  # Initialisasi Total Integral
+    # Initialisasi Total Integral
     integral_sum = 0.0
 
-  # Iterasi melalui setiap pias
+    # Iterasi melalui setiap pias
     for i in range(N):
         # Hitung titik tengah pias ke-i
-        # x_k = a + i * delta_x
-        # x_mid = x_k + delta_x / 2
         x_mid = a + (i + 0.5) * delta_x
         
         # Tambahkan luas persegi panjang (f(x_mid) * delta_x)
