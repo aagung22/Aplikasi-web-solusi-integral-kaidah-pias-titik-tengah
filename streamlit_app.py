@@ -35,3 +35,22 @@ st.title("Solusi Integral Tentu Numerik")
 st.header("Kaidha Pias Titik Tengah")
 
 st.markdown("---")
+
+# === Input Function
+function_str = st.text_input(
+  "1. Masukkan Fungsi f(x) (gunakan 'x' sebagai variabel, contoh : sin(x), x**2 + 2*x)",
+  "x**2 + 1"
+)
+
+# === Input Batas dan Pias
+st.subheader("2. Tentukan Batas Integrasi dan Jumlah Pias")
+col1, col2, col3 = st.columns(3)
+with col1:
+    a = st.number_input("Batas Bawah (a)", value=0.0)
+with col2:
+    b = st.number_input("Batas Atas (b)", value=1.0)
+with col3:
+    # Menggunakan slider untuk N agar lebih interaktif
+    N = st.slider("Jumlah Pias (N)", min_value=1, max_value=1000, value=100)
+
+st.markdown("---")
