@@ -32,7 +32,7 @@ def midpoint_rule(f, a, b, N):
 
 # === UI/UX Streamlit
 st.title("Solusi Integral Tentu Numerik")
-st.header("Kaidha Pias Titik Tengah")
+st.header("Kaidah Pias Titik Tengah")
 
 st.markdown("---")
 
