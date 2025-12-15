@@ -43,7 +43,7 @@ function_str = st.text_input(
 )
 
 # === Input Batas dan Pias
-st.subheader("2. Tentukan Batas Integrasi dan Jumlah Pias")
+st.subheader("Tentukan Batas Integrasi dan Jumlah Pias")
 col1, col2, col3 = st.columns(3)
 with col1:
     a = st.number_input("Batas Bawah (a)", value=0.0)
